@@ -1,0 +1,24 @@
+{
+  "name": "vendor-licensing-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^1.13.6",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "ecocash-payment-sdk": "^1.0.9",
+    "express": "^4.22.1",
+    "google-auth-library": "^9.14.2",
+    "jsonwebtoken": "^9.0.3",
+    "paynow": "^2.2.2",
+    "pg": "^8.20.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
