@@ -1,12 +1,12 @@
-##📘 Smart Vendor Licensing System — Full Stack Project
+# 📘Smart Vendor Licensing System — Full Stack Project
 A complete digital licensing system built with a Flutter mobile app, a React + Vite officer web portal, and a Node.js (Express) backend powered by a PostgreSQL database.
 The system enables vendors to apply for licenses, officers to review applications, and the backend to coordinate communication, payments, and status updates.
 
-🚀 Tech Stack Overview
-📱 Mobile App (Client) — Flutter
+## 🚀 Tech Stack Overview
+### 📱 Mobile App (Client) — Flutter
 Built with Dart
 
-Folder structure includes:
+#### Folder structure includes:
 
 screens/ — UI pages
 
@@ -18,12 +18,12 @@ widgets/ — reusable UI components
 
 Used by vendors to apply for licenses, upload details, and receive approval updates.
 
-🖥️ Officer Web Portal — React + Vite
+### 🖥️ Officer Web Portal — React + Vite
 Located in the officer-portal/ folder.
 
 Built with React, bundled with Vite
 
-Used by officers to:
+#### Used by officers to:
 
 View incoming license applications
 
@@ -33,12 +33,12 @@ Manage vendor records
 
 Communicates directly with the backend API.
 
-🛠️ Backend Server — Node.js + Express
+### 🛠️ Backend Server — Node.js + Express
 Located in the vendor-backend/ folder.
 
 REST API built with Express.js
 
-Handles:
+#### Handles:
 
 License application processing
 
@@ -52,13 +52,15 @@ Stores all data in a PostgreSQL database
 
 Acts as the communication bridge between Flutter and the React portal.
 
-🔗 System Architecture
+## 🔗 System Architecture
+
 Code
 Flutter Mobile App  <---->  Node.js Backend  <---->  React Officer Portal
         |                        |                        |
         |                        |                        |
         -------- PostgreSQL Database (Central Storage) ----
-Workflow Summary
+
+### Workflow Summary
 Vendor (Flutter app) submits a license application.
 
 Backend server receives the request, validates it, processes payments, and stores the data in PostgreSQL.
@@ -71,7 +73,7 @@ Backend updates the database and sends a response back to the Flutter app.
 
 Vendor receives a real‑time status update.
 
-📁 Project Structure
+## 📁 Project Structure
 Code
 SmartVenApp/
 │
@@ -95,8 +97,9 @@ SmartVenApp/
     │   └── services/
     ├── prisma/ or db/     # PostgreSQL schema
     └── server.js
-⚙️ Backend API Highlights
-Authentication (optional depending on your setup)
+    
+## ⚙️ Backend API Highlights
+Authentication 
 
 Vendor license application endpoints
 
@@ -108,23 +111,26 @@ Push notifications / status updates
 
 PostgreSQL ORM / query layer
 
-🧪 Running the Project
-1️⃣ Backend
+## 🧪 Running the Project
+### 1️⃣ Backend
 Code
 cd vendor-backend
 npm install
 npm run dev
-2️⃣ Officer Web Portal
+
+### 2️⃣ Officer Web Portal
 Code
 cd officer-portal
 npm install
 npm run dev
-3️⃣ Flutter Mobile App
+
+### 3️⃣ Flutter Mobile App
 Code
 cd flutter-app
 flutter pub get
 flutter run
-🗄️ Database (PostgreSQL)
+
+### 🗄️ Database (PostgreSQL)
 The backend stores:
 
 Vendor profiles
@@ -137,7 +143,7 @@ Officer decisions
 
 Status updates
 
-📬 Communication Flow
+## 📬 Communication Flow
 Flutter → Backend
 Submit application
 
@@ -157,7 +163,7 @@ Send approval/rejection
 
 Notify vendor of updates
 
-🛡️ Error Handling & Validation
+## 🛡️ Error Handling & Validation
 Backend validates all incoming data
 
 Officer actions are logged
@@ -166,7 +172,7 @@ Flutter app displays user‑friendly error messages
 
 Database constraints ensure data integrity
 
-🤝 Contributing
+## 🤝 Contributing
 Pull requests are welcome.
 Please follow clean commit messages and branch naming conventions.
 
